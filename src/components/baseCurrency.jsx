@@ -9,6 +9,7 @@ import currency from '../utils/currency.js'
 class BaseCurrency extends Component {
 	constructor(props) {
 		super(props);
+
 		this._handleCurrencyChange = this._handleCurrencyChange.bind(this);
 	}
 

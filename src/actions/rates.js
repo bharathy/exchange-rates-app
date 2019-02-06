@@ -23,7 +23,7 @@ export function updateBaseCurrency(currency) {
 	}
 }
 
-/* RATEs ACTIONS */
+/* RATES ACTIONS */
 export function fetchRates(date, currency) {
 	return (dispatch) => {
 		const embedded_api = `${RATES_BASE_API}${date}?access_key=${ACCESS_KEY}&base=${currency}`;
@@ -39,7 +39,6 @@ export function fetchRates(date, currency) {
 				error: (data.error) ? data.error.type : null
 			});
 		}).catch(function(error) {
-			console.log("inside error" +error)
 			dispatch({
 				type: FETCH_RATES_FAILURE,
 				errorMessage: error.message

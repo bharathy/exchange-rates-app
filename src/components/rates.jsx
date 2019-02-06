@@ -12,6 +12,7 @@ import RatesTable from '../components/RatesTable';
 export class Rates  extends Component {
 	constructor(props) {
 		super(props);
+
 		this._handleOnSubmit = this._handleOnSubmit.bind(this);
 	}
 
@@ -27,7 +28,6 @@ export class Rates  extends Component {
 		        type="button" value="Submit" onClick={this._handleOnSubmit}/>
 		        { success && <RatesTable /> }
 		        { (!success && error) && <div className="center orange p30"> { errorMsg } </div> }
-		        
 	    	</div>
 	    )
 	}

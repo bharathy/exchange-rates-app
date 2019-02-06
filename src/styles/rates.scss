@@ -4,8 +4,6 @@
 /*  functional_css */
 .grey { color: $grey-2; }
 .orange { color: $orange; }
-.transparent { color: transparent; }
-.red{ color: red; }
 .white { color: $white; }
 
 .bg-orange { background-color: $orange; }
@@ -16,7 +14,7 @@
 .bdr-btm {
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-color: #8B8D8F;
+  border-color: $grey-1;
 }
 
 .ft-bold { font-weight: bold; }
@@ -24,8 +22,8 @@
 .ft-16 { font-size: 16px; }
 
 a:visited, a:link{
-	color: $orange;
-	text-decoration: none;
+  color: $orange;
+  text-decoration: none;
 }
 a:hover { text-decoration: underline; }
 a:active { color: $orange; }
@@ -36,9 +34,7 @@ a:active { color: $orange; }
 .absolute { position: absolute; }
 .content-box { box-sizing: content-box; }
 
-.m0 { margin:0; }
 .m-0-auto { margin: 0 auto; }
-.m10 { margin: 10px }
 .mt10 { margin-top: 10px; }
 .mr60 { margin-right: 60px; }
 .mr70 { margin-right: 70px; }

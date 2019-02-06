@@ -6,7 +6,7 @@ const TableHeader = ({ headerTitle }) => {
         <div className= 'divTableHead center ft-16 ft-bold'>
             <div className='orange'> { headerTitle } </div>
         </div>
-    );
+    )
 };
 
 TableHeader.propTypes = {

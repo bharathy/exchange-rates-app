@@ -13,11 +13,13 @@ import mapStateToProps from '../utils/mapStateToProps';
 class DatePick extends Component {
 	constructor(props) {
 		super(props);
+
 		this._handleDayChange = this._handleDayChange.bind(this);
 	}
 
 	render() {
-		const classes = { container: "inline-block mr60 w-173", overlayWrapper: "absolute bg-white" , overlay: ""}
+		const classes = { container: "inline-block mr60 w-173", overlayWrapper: "absolute bg-white" , overlay: ""};
+
 		return (
 			<DayPickerInput classNames={ classes } placeholder="Select Date" formatDate={ formatDate }
 			selectedDay={ this.props.date } onDayChange={ this._handleDayChange } />

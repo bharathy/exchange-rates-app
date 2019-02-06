@@ -7,7 +7,7 @@ const TableRow = ({ currency, rate }) =>  {
             <div className="divTableCell ft-12">{ currency }</div>
             <div className="divTableCell ft-12">{ rate }</div>
         </div>
-    );
+    )
 };
 
 TableRow.propTypes = {
