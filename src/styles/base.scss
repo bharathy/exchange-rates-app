@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+ul, li {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font: 100% $main-font-name;
+  color: $grey-2;
+}
+
+button, a {
+  cursor: pointer;
+  outline:none;
+}
+
+input {
+  padding: 6px;
+  width: 153px;
+}
+
+.-clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+select:active, select:hover {
+  outline: none;
+}

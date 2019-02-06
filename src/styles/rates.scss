@@ -1,0 +1,101 @@
+@import "./variables";
+@import "./base";
+
+/*  functional_css */
+.grey { color: $grey-2; }
+.orange { color: $orange; }
+.transparent { color: transparent; }
+.red{ color: red; }
+.white { color: $white; }
+
+.bg-orange { background-color: $orange; }
+.bg-white { background-color: $white; }
+
+.bdr-radius-6 { border-radius: 6px; }
+.bdr-white { border-color: $white }
+.bdr-btm {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #8B8D8F;
+}
+
+.ft-bold { font-weight: bold; }
+.ft-14 { font-size: 12px; }
+.ft-16 { font-size: 16px; }
+
+a:visited, a:link{
+	color: $orange;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:active { color: $orange; }
+
+.cur-hand {cursor: pointer}
+.inline-block {display: inline-block;}
+.center { text-align:center }
+.absolute { position: absolute; }
+.content-box { box-sizing: content-box; }
+
+.m0 { margin:0; }
+.m-0-auto { margin: 0 auto; }
+.m10 { margin: 10px }
+.mt10 { margin-top: 10px; }
+.mr60 { margin-right: 60px; }
+.mr70 { margin-right: 70px; }
+.mt30 { margin-top: 30px; }
+.p10{ padding:10px; }
+.p20 {padding: 20px; }
+.p30 {padding: 30px; }
+.p-20-0 {padding: 20px 0;}
+
+.w-full { width: 100%; }
+.w-half { width: 50%; }
+.w-173 { width: 173px; }
+.h-full { height: 100%; }
+
+/* Table */
+.gridTable {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+.divTable{
+	display: table;
+}
+.divTableRow {
+	display: table-row;
+	border-bottom: 1px solid #eee;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding:8px;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+/* Select-box */
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) $orange no-repeat 96% 0;
+   height: 28px;
+   width: 200px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 28px;
+   padding: 5px; 
+   width: 214px;
+   color: $white;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
